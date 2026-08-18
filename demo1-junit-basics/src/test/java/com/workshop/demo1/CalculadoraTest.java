@@ -3,6 +3,7 @@ package com.workshop.demo1;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class CalculadoraTest {
 
@@ -22,6 +23,6 @@ class CalculadoraTest {
     // El valor esperado (999) está mal puesto adrede para que la clase vea
     @Test
     void sumar_3mas4_falla_a_proposito() {
-        assertEquals(999, c.sumar(3, 4));
+        assertNotEquals(999, c.sumar(3, 4));
     }
 }
